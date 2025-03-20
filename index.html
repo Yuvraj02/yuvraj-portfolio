@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 id = "title">Portfolio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                <img class = "nav-icon menu" src="./images/close.svg" onclick="closemenu()">
+                </ul>
+                <img class = "nav-icon close" src="./images/menu.svg" onclick="openmenu()">
+            </nav>
+
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Yuvraj</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I've been in love with tech for as long as I can remember. 
+                        From a young age, I was always tinkering with gadgets and trying to understand how things worked, 
+                        which naturally led me to software development.
+                        <br>
+                        <br>
+                        Today, I’m a full-stack web developer with a passion for creating websites and mobile apps 
+                        that are not only functional but also user-friendly and visually appealing.
+                        <br>
+                        <br>I’ve honed my skills in technologies like React, Node.js, Express, and various databases, including both SQL and NoSQL, giving me the flexibility to build end-to-end solutions.
+                        <br>
+                        <br>
+                        What excites me most about development is the endless opportunity to learn and innovate.
+                        <br>
+                        <br> 
+                        I love taking on new challenges, whether it’s designing a sleek user interface or building a robust back-end system.
+                        <br>
+                        <br> 
+                        My goal is always to bring ideas to life with clean, efficient code while ensuring that the end-user experience is seamless.
+                        <br>
+                        <br> 
+                        Tech has been my passion for as long as I can remember, and it continues to fuel my curiosity and drive to push the limits of what’s possible.
+                        It’s not just about writing code for me—it’s about solving real-world problems and making a positive impact through technology.</p>
+
+                    <div class="tab-titles">
+                        <p class = "tab-links active-link" onclick= "opentab('skills')">Skills</p>
+                        <p class = "tab-links" onclick= "opentab('experience')">Projects</p>
+                        <p class = "tab-links" onclick= "opentab('education')">Education</p>   
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Full stack(React.js, Express.js, Node.js,HTML,CSS)</li>
+                            <li><span>App Development</span><br>Flutter, Android(Jetpack Compose)</li>
+                            <li><span>Databases</span><br>PostgreSQL, Firebase</li>
+                            <li><span>Cloud Platforms</span><br>Firebase, AWS</li>
+                            <li><span>AI Libs</span><br>Tensorflow</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "experience">
+                        <ul>
+                            <li><span>Agrimatics (Dec 2023 - May 2024)</span><br>AI based automation for Farmers with marketplace</li>
+                            <li><span>Nirog (Aug 2023 - Sep 2023)</span><br>Medical Record Tracking System </li>
+                            <li><span>Concise (Dec 2021 - Feb 2022)</span><br>News Aggregation Ecosystem</li> 
+                            <li><span>Ballin (Jul 2021-Sep 2021)</span><br>Turf Booking Cross Platform app</li>
+                            <li><span>Home Automation System (Sep 2020- Dec 2020)</span><br>Built with TM4C123G, a portable Home Automation System, that integrates into your existing switch board</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>B.Tech from SRM Institute of Science and Technology</li>
+                            <li><span>2020</span><br>H.Secondary from Bright Paragon Academy, Bhopal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- --------------services----------- -->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">What can I do?</h1>
+            <div class="services-list">
+                <div>
+                    <img src="./images/code-solid.svg" class = "services-img">
+                    <h2>Web Development</h2>
+                    <p>I have a solid understanding of web development, with experience in both front-end and back-end technologies.<br><br> 
+                      I work with React to build dynamic user interfaces and use Node.js and Express for back-end logic.<br><br> 
+                      I’m also proficient in SQL and NoSQL databases, allowing me to design efficient data systems. <br><br>
+                      For me, web development is about creating seamless, reliable applications that solve real-world problems, 
+                      and I’m always eager to learn new tools and techniques to improve my skills and push the limits of what’s possible.
+                    </p>
+                </div>
+                <div>
+                    <img src="./images/mobile-screen-solid.svg" class = "services-img">
+                    <h2>App Development</h2>
+                    <p>I have strong expertise in Android development, including the latest Jetpack Compose for building modern, responsive UIs. <br><br>
+                        I also work with Flutter for cross-platform app development, allowing me to create apps that run seamlessly on both Android and iOS.<br><br>
+                        I enjoy leveraging these powerful tools to create smooth, user-friendly mobile experiences while ensuring efficient and scalable code. <br><br>
+                        Whether working on native Android apps or cross-platform solutions, I’m always excited to explore new technologies and improve my
+                        development skills.
+                    </p>
+                </div>
+                <div>
+                    <img src="./images/cloud-solid.svg" class="services-img">
+                    <h2>Cloud Hosting</h2>
+                    <p>I have experience with AWS and Firebase, using AWS services like EC2, S3, Lambda, and RDS for scalable cloud infrastructure and deployment.
+                        <br>
+                        <br> 
+                        With Firebase, I leverage tools like authentication, cloud functions, and Firestore for real-time data management.
+                        <br>
+                        <br>
+                        These platforms help me build secure, efficient, and scalable applications in the cloud.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <!-- --------------Portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+
+            <h1 class = "sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Concise News</h3>
+                        <p>I built an app called Concise because I wanted to make staying informed feel a little less overwhelming. With Concise, I organized the news into categories, so you can easily find the topics that interest you most. Every evening, the app updates with the top 10 stories in each category, giving you the freshest news in a simple, straightforward way. 
+                            No endless scrolling, just the most important headlines, neatly packaged to save you time and keep you up to date.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Campus Connect</h3>
+                        <p>I built a social media app specifically for university campuses to help students stay informed and connected. 
+                            The app keeps students updated on campus events, so they never miss out on important happenings. 
+                            It also allows them to connect with alumni, creating a bridge between current students and graduates, 
+                            fostering a sense of community and offering valuable networking opportunities. 
+                            It’s designed to make campus life more interactive and ensure everyone feels involved, both during their time at university and beyond.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Turf Booking Website</h3>
+                        <p>I joined Ballin, a sports turf booking startup, where I was responsible for managing and building their website. 
+                            My role involved creating and maintaining features to ensure a seamless user experience. 
+                            I also supported other engineers by providing helpful functions, which helped streamline development and improve the platform’s 
+                            overall performance. It was an exciting experience to contribute to a growing startup while collaborating with a dedicated team 
+                            to enhance the platform for sports enthusiasts.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Yuvraj02?tab=repositories" class = "btn">Get to my Github to See More </a>
+        </div>
+    </div>
+
+    <!-- --------------contact----------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><img src="./images/mail_icon.svg">yuvrajsinghbhadoria@gmail.com</p>
+                    <p><img src="./images/call_icon.svg">+91 8770805985</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/yuvraj-singh-bhadoria-b4310197/"><img src="./images/linkedin.png"></a>
+                        <a href="https://github.com/Yuvraj02"><img src="./images/github-mark-white.svg" alt=""></a>
+                    </div>
+                    <a href="resume/Resume.pdf" download class="btn btn2">Download My CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name = 'submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";          
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";          
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyex4tjhcWCATaKR8R27-jiNFM9IGyJszkjigUboqpIRWpgZOhUe0-HUnJTH2LL7zUBgg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!" 
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
